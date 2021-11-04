@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Courgette&family=Spartan:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+$color_1: #2b2c32;
+$color_2: #434141;
+$color_3: #959692;
+$color_4: #baa38d;
+$color_5: #68696a;
+
+.main {
+    width: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url(../img_travel/p3.jpg);/*เฝดสีพื้นหลัง*/
+    background-position: center;
+    background-size: cover;
+    height: 109vh;
+    
+}
+.nav {
+    width: 1200px;
+    height: 75px;
+    margin: auto;
+}
+.icon{
+    width: 200px;
+    float: left;
+    height: 70px;
+}
+.logo {
+    color: $color_4;
+    font-size: 35px;
+    font-family: 'Abril Fatface', cursive;
+    padding-left: 20px;
+    float: left;
+    padding-top: 10px;
+}
+.menu{
+    width: 400px;
+    float: left;
+    height: 70px; 
+}
+ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    li{
+    list-style: none;
+    margin-left: 62px;
+    margin-top: 27px;
+    font-size: 14px;
+    
+   a{
+    text-decoration: none;
+    color: $color_4;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: bold;
+    transition: .4s ease-in-out;/*เปลี่ยนสีฟ้อน*/
+    &:hover{
+        color: $color_5;
+    }
+}
+}
+}
+.search{
+    width: 330px;
+    float: left;
+    margin-left: 270px;
+    
+}
+.srch{
+        font-family: 'Cormorant Garamond', serif;
+        width: 200px;
+        height: 40px;
+        background: transparent;/*ให้แบล็กกาวหายไป*/
+        border: 1px solid $color_5;
+        margin-top: 13px;
+        color: white;
+        border-right: none;
+        font-size: 16px;
+        float: left;
+        padding: 10px;
+        border-bottom-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        &:focus{
+            outline: none;
+        }
+
+    
+    }
+    .btn{
+        width: 100px;
+        height: 40px;
+        background: $color_5;
+        color: $color_3;
+        font-size: 12px;
+        border: 2px solid $color_5;
+        margin-top: 13px;
+        border-bottom-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        &:focus{
+            outline: none;
+        }
+    }
+.content{
+    width: 1200px;
+    height: auto;
+    margin: auto;
+    color: #fff;
+    position: relative;
+    left: 247px;
+    top: 68px;
+    .paragrap{
+        padding-left: 20px;
+        padding-bottom: 25px;
+        font-family: 25px;
+        font-family: 'Cormorant Garamond', serif;
+        letter-spacing: 1.2px;/*ช่องว่างระหว่างตัวอักษร*/
+        line-height: 30px;/*ช่องว่างระหว่างบรรทัด*/
+    }
+    .h1{
+        font-size: 50px;
+        padding-left: 20px;
+        margin-top: 9%;
+        letter-spacing: 2px;
+
+    }
+    .cn{
+        width: 160px;
+        height: 40px;
+        background: $color_3;
+        border: none;
+        margin-bottom: 10px;
+        margin-left: 20px;
+        font-size: 18px;
+        cursor: pointer;
+        border-radius: 5px;
+        transition: .3s;
+        &:hover{
+            transform: translateY(-10px);
+            background: #2b2c32;
+            box-shadow: rgba(243, 243, 243, 0.5);
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        
+    }
+}
+.content span{
+    color: $color_4;
+    font-size: 60px;
+}
+.from{
+    width: 250px;
+    height: 380px;
+    background: linear-gradient(to top, rgba(85, 85, 85, 0.8)50%,rgba(97, 97, 97, 0.8)50%);
+    position: absolute;
+    left: 969px;
+    top: 104px;
+    border-radius: 10px;
+    padding: 25px;
+    h2{
+        width: 220px;
+        font-family: 'Cormorant Garamond', serif;
+        text-align: center;
+        color: $color_4;
+        font-size: 22px;
+        background-color: $color_1;/*พื้นหลัง title login*/
+        border-radius: 10px;
+        margin: 2px;
+        padding: 8px;
+    }
+    input{
+        width: 240px;
+        height: 35px;
+        background: transparent;
+        border: 1px solid $color_1;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        color: $color_3;
+        font-size: 15px;
+        letter-spacing: 1px;
+        margin-top: 30px;
+        font-family: 'Cormorant Garamond', serif;
+        &:focus{
+            outline: none;/*เป็นการเอากรอบออกตอนเราคลิ๊กที่กล่องข้อความ*/
+        }
+
+    }
+    .link{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 17px;
+        padding-top: 20px;
+        text-align: center;
+    }
+    a{
+        text-decoration: none;
+        color: $color_4;
+    }
+    .liw{
+        padding-top: 15px;
+        padding-bottom: 10px;
+        text-align: center;
+    }
+    
+}
+.socail {
+    padding-left: 14px;
+    padding-top: 5px;
+   
+    li{
+       margin-left: 26px;
+       margin-top: 8px;
+       font-size: 20px;
+        transition: .4s; 
+        color: $color_1;
+       &:hover{
+           transform: translateY(-10px);
+          color: $color_3;
+       }
+    }
+
+}
+::placeholder{/*เปลี่ยนสีฟ้อนตอนเขียน*/
+    color: $color_3;
+    font-family: Arial;
+}
+.btrn{
+    width: 240px;
+    height: 40px;
+    background: $color_1;
+    border: none;
+    border-radius: 10px;
+    margin-top: 30px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: .4s;
+    a{
+        color: $color_4;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    &:hover{
+        background: white;
+    }
+
+}
